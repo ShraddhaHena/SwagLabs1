@@ -1,0 +1,19 @@
+package Basic;
+
+public class instance4 {
+	public static void main(String[]args) {
+		System.out.println (Instance3.i); // ;calling static object from other class be like = classname. objectname
+		System.out.println (Instance5.a);
+		System.out.println (Instance5.s);
+	 
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}

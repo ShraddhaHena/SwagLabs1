@@ -1,0 +1,7 @@
+package Basic;
+
+public class table {
+public static void main(String[] args) {
+	userdefine.openBrowser
+}
+}

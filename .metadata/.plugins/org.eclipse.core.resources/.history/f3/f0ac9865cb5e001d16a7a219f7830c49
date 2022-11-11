@@ -1,0 +1,25 @@
+package Basic;
+
+import java.util.ArrayList;
+
+public class collection {
+public static void main(String[] args) {
+	ArrayList<String> l = new ArrayList<String>();// Homogenious
+	l.add("Velocity");
+	l.add("Katraj");
+	l.add("velocity");
+	l.add("Hello");
+	l.add(null);
+	l.add(null);
+	
+	System.out.println(l.get(0));
+	System.out.println(l.get(2));
+	System.out.println(l.get(4));
+	System.out.println(l.get(5));
+
+}
+}
+
+
+
+//Arraylist is implimementation class which impliment List Interface

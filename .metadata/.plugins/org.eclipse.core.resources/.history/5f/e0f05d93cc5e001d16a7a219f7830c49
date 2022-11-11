@@ -1,0 +1,22 @@
+package Basic;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+public class collection2 {
+public static void main(String[] args) {
+	HashSet hs = new HashSet();
+	hs.add("Velocity");
+	hs.add(1234);
+	hs.add(null);
+	hs.add(null);
+	hs.add("Velocity");
+	 
+	 Iterator i = hs.iterator();
+	
+	while(i.hasNext()) {
+		System.out.println( );
+	}
+}
+}

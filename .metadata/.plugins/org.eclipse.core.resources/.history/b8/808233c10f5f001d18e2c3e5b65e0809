@@ -1,0 +1,42 @@
+package test;
+
+import java.io.IOException;
+
+
+import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pojo.Browser;
+import pom.Loginpage;
+import utility.Baseclass;
+import utility.Parametrization;
+import utility.Screenshot;
+@Listeners(utility.Listeners.class)
+public class SwagLabsLoginTest extends Baseclass{
+	
+@BeforeMethod
+public void openBrowser() {
+	 driver =Browser.launchchrome();
+}
+
+@Test
+public void LoginTest() throws EncryptedDocumentException, IOException, InterruptedException {
+	Loginpage login = new Loginpage(driver); //Loginpage is class of pom package , We have to import it here and have create its instance
+	String user = Parametrization.getExceldata("Credentials",0,0);
+	String pass = Parametrization.getExceldata("Credentials",1,0);
+	login.enterusername(user);
+	login.enterpassword(pass);	
+	login.clickOnLogin();
+	login.ClickOncart();
+	String ExceptedUrl= "https://www.saucedemo.com/inventory.html";
+	String actualUrl = driver.getCurrentUrl();
+	Screenshot.clickscreenshot(driver, "name");
+	
+	Assert.assertNotEquals(actualUrl, ExceptedUrl);
+	
+	
+}
+}

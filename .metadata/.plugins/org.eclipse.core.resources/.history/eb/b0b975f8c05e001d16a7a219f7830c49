@@ -1,0 +1,18 @@
+package Basic;
+
+public class SBSB {
+public static void main(String[] args) {
+	String s = new String("Velocity");
+	String sn = s.toUpperCase();
+	System.out.println(s);
+	System.out.println(sn);
+	
+	StringBuilder sb = new StringBuilder("Hello");
+	sb.reverse();
+	System.out.println(sb);
+	
+	StringBuffer SB = new StringBuffer("katraj");
+	SB.append(SB);
+	System.out.println(SB);
+}
+}

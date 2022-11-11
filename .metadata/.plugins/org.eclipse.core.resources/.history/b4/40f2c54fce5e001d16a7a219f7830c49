@@ -1,0 +1,39 @@
+package Basic;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+public class collection2 {
+public static void main(String[] args) {
+//	HashSet hs = new HashSet();
+//	hs.add("Velocity");
+//	hs.add(1234);
+//	hs.add(null);
+//	hs.add(null);
+//	hs.add("Velocity");
+//	 
+//	 Iterator i = hs.iterator();
+//	
+//	while(i.hasNext()) {
+//		System.out.println(i.next());
+//	}
+	
+	HashMap<Integer, String> hm = new HashMap<>();
+	hm.put(1, "Velocity");
+	hm.put(null, "Katraj");
+    hm.put(null, null);
+    hm.put(2, "Pune");
+	
+	
+	System.out.println(hm.get(null));
+	System.out.println(hm.get(2));
+
+	
+	
+	
+	
+}
+}
+// HashSet not save the duplicate value, null value & it do not maintain the order
